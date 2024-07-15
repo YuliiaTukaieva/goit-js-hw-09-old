@@ -87,4 +87,9 @@ const images = [
   const imageGallery = images.map(galleryItems).join('');
   gallery.innerHTML = imageGallery;
 
-  let slGallery = new SimpleLightbox('ul.gallery a');
+  let slGallery = new SimpleLightbox('ul.gallery a', {
+    captions: true,
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+  });
