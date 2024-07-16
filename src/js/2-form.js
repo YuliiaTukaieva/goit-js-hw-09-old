@@ -30,7 +30,7 @@ function handleFormSubmit(event) {
 }
 
 function handleFormInput(event) {
-  const value = event.target.value;
+  const value = event.target.value.trim();
   const key = event.target.name;
 
 //   let savedFeedbackData = {};
